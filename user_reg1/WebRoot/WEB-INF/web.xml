@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <servlet-name>UserListServlet</servlet-name>
+    <servlet-class>org.leadfar.servlet.UserListServlet</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>UserAddServlet</servlet-name>
+    <servlet-class>org.leadfar.servlet.UserAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserDeleteServlet</servlet-name>
+    <servlet-class>org.leadfar.servlet.UserDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserUpdateInputServlet</servlet-name>
+    <servlet-class>org.leadfar.servlet.UserUpdateInputServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <servlet-class>org.leadfar.servlet.UserUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>org.leadfar.servlet.loginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Loginservlet</servlet-name>
+    <servlet-class>org.leaderfar.cms.backend.servlet.Loginservlet</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>UserListServlet</servlet-name>
+    <url-pattern>/servlet/UserListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserAddServlet</servlet-name>
+    <url-pattern>/servlet/UserAddServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>UserDeleteServlet</servlet-name>
+    <url-pattern>/servlet/UserDeleteServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>UserUpdateInputServlet</servlet-name>
+    <url-pattern>/servlet/UserUpdateInputServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <url-pattern>/servlet/UserUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/servlet/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Loginservlet</servlet-name>
+    <url-pattern>/backend/Loginservlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
